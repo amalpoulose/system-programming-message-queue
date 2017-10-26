@@ -41,6 +41,7 @@ int main(void)
 		if(v->d_name[0]=='.')
 			continue;
 		strcpy(s,v1.s);
+		strcat(s,"/");
 		strcat(s,v->d_name);
 		printf("  %-10s",v->d_name);
 		stat(s,&p);
